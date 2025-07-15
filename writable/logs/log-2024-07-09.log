@@ -1,0 +1,605 @@
+ERROR - 2024-07-09 13:42:50 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'dikutravels' in D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'dikutravels', 3306, '', 0)
+#1 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\AnweshaDi\taxation_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\AnweshaDi\taxation_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\AnweshaDi\taxation_project\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\AnweshaDi\taxation_project\app\Controllers\Home.php(19): App\Models\ToursModel->getToursDetails()
+#8 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Projects\AnweshaDi\taxation_project\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'dikutravels' in D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#3 D:\Projects\AnweshaDi\taxation_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Projects\AnweshaDi\taxation_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Projects\AnweshaDi\taxation_project\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#6 D:\Projects\AnweshaDi\taxation_project\app\Controllers\Home.php(19): App\Models\ToursModel->getToursDetails()
+#7 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#8 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Projects\AnweshaDi\taxation_project\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-09 13:42:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'dikutravels'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `tour_cover_image`, `tours`.`title` as `tours_title`, `tours`.`short_description` as `tours_sh_desc`, `tours`.`price` as `tours_price`, `tours`.`duration` as `tours_duration`, `tours`.`journey_date_1` as `tours_j1`, `tours`.`journey_date_2` as `tours_j2`, `tours`.`journey_date_3` as `tours_j3`, `tours`.`is_popular` as `is_popular`
+FROM `tours`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(19): App\Models\ToursModel->getToursDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 13:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 13:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 13:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 13:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 13:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 13:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 13:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 13:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 13:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 13:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 13:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 13:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 13:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 13:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 13:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-09 13:58:56 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'taxation' in D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'taxation', 3306, '', 0)
+#1 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\AnweshaDi\taxation_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\AnweshaDi\taxation_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\AnweshaDi\taxation_project\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\AnweshaDi\taxation_project\app\Controllers\Home.php(19): App\Models\ToursModel->getToursDetails()
+#8 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Projects\AnweshaDi\taxation_project\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'taxation' in D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#3 D:\Projects\AnweshaDi\taxation_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Projects\AnweshaDi\taxation_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Projects\AnweshaDi\taxation_project\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#6 D:\Projects\AnweshaDi\taxation_project\app\Controllers\Home.php(19): App\Models\ToursModel->getToursDetails()
+#7 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#8 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Projects\AnweshaDi\taxation_project\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-09 13:58:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'taxation'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `tour_cover_image`, `tours`.`title` as `tours_title`, `tours`.`short_description` as `tours_sh_desc`, `tours`.`price` as `tours_price`, `tours`.`duration` as `tours_duration`, `tours`.`journey_date_1` as `tours_j1`, `tours`.`journey_date_2` as `tours_j2`, `tours`.`journey_date_3` as `tours_j3`, `tours`.`is_popular` as `is_popular`
+FROM `tours`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(19): App\Models\ToursModel->getToursDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 13:59:08 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'taxation' in D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'taxation', 3306, '', 0)
+#1 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\AnweshaDi\taxation_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\AnweshaDi\taxation_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\AnweshaDi\taxation_project\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\AnweshaDi\taxation_project\app\Controllers\Home.php(19): App\Models\ToursModel->getToursDetails()
+#8 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Projects\AnweshaDi\taxation_project\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'taxation' in D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#3 D:\Projects\AnweshaDi\taxation_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Projects\AnweshaDi\taxation_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Projects\AnweshaDi\taxation_project\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#6 D:\Projects\AnweshaDi\taxation_project\app\Controllers\Home.php(19): App\Models\ToursModel->getToursDetails()
+#7 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#8 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Projects\AnweshaDi\taxation_project\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-09 13:59:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'taxation'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `tour_cover_image`, `tours`.`title` as `tours_title`, `tours`.`short_description` as `tours_sh_desc`, `tours`.`price` as `tours_price`, `tours`.`duration` as `tours_duration`, `tours`.`journey_date_1` as `tours_j1`, `tours`.`journey_date_2` as `tours_j2`, `tours`.`journey_date_3` as `tours_j3`, `tours`.`is_popular` as `is_popular`
+FROM `tours`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(19): App\Models\ToursModel->getToursDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 13:59:08 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'taxation' in D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'taxation', 3306, '', 0)
+#1 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\AnweshaDi\taxation_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\AnweshaDi\taxation_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\AnweshaDi\taxation_project\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\AnweshaDi\taxation_project\app\Controllers\Home.php(19): App\Models\ToursModel->getToursDetails()
+#8 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Projects\AnweshaDi\taxation_project\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'taxation' in D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#3 D:\Projects\AnweshaDi\taxation_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Projects\AnweshaDi\taxation_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Projects\AnweshaDi\taxation_project\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#6 D:\Projects\AnweshaDi\taxation_project\app\Controllers\Home.php(19): App\Models\ToursModel->getToursDetails()
+#7 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#8 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Projects\AnweshaDi\taxation_project\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-09 13:59:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'taxation'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `tour_cover_image`, `tours`.`title` as `tours_title`, `tours`.`short_description` as `tours_sh_desc`, `tours`.`price` as `tours_price`, `tours`.`duration` as `tours_duration`, `tours`.`journey_date_1` as `tours_j1`, `tours`.`journey_date_2` as `tours_j2`, `tours`.`journey_date_3` as `tours_j3`, `tours`.`is_popular` as `is_popular`
+FROM `tours`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(19): App\Models\ToursModel->getToursDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 13:59:21 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'taxation' in D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'taxation', 3306, '', 0)
+#1 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\AnweshaDi\taxation_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\AnweshaDi\taxation_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\AnweshaDi\taxation_project\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\AnweshaDi\taxation_project\app\Controllers\Home.php(19): App\Models\ToursModel->getToursDetails()
+#8 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Projects\AnweshaDi\taxation_project\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'taxation' in D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#3 D:\Projects\AnweshaDi\taxation_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Projects\AnweshaDi\taxation_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Projects\AnweshaDi\taxation_project\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#6 D:\Projects\AnweshaDi\taxation_project\app\Controllers\Home.php(19): App\Models\ToursModel->getToursDetails()
+#7 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#8 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Projects\AnweshaDi\taxation_project\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-09 13:59:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'taxation'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `tour_cover_image`, `tours`.`title` as `tours_title`, `tours`.`short_description` as `tours_sh_desc`, `tours`.`price` as `tours_price`, `tours`.`duration` as `tours_duration`, `tours`.`journey_date_1` as `tours_j1`, `tours`.`journey_date_2` as `tours_j2`, `tours`.`journey_date_3` as `tours_j3`, `tours`.`is_popular` as `is_popular`
+FROM `tours`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(19): App\Models\ToursModel->getToursDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 14:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 14:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 14:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 14:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 14:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 14:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 14:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 14:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 14:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 14:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-09 16:26:58 --> mysqli_sql_exception: Unknown column 'tours.id' in 'field list' in D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tours`....', 0)
+#1 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tours`....')
+#2 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tours`....')
+#3 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\AnweshaDi\taxation_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\AnweshaDi\taxation_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\AnweshaDi\taxation_project\app\Controllers\AdminController\ServiceController.php(17): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(919): App\Controllers\AdminController\ServiceController->index()
+#8 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\ServiceController))
+#9 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Projects\AnweshaDi\taxation_project\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-09 16:26:58 --> Unknown column 'tours.id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `cover_image`, `tours`.`title` as `title`, `tours`.`price` as `price`, `tours`.`is_popular` as `popular`
+FROM `services`
+ORDER BY `tours`.`id` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController\ServiceController.php(17): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\ServiceController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\ServiceController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 16:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-09 16:27:37 --> Invalid file: "admin/service/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/service/index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/service/index', [], true)
+ 3 APPPATH\Controllers\AdminController\ServiceController.php(18): view('admin/service/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\ServiceController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 16:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-09 16:40:31 --> Invalid file: "admin/services/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/services/create.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/services/create', [], true)
+ 3 APPPATH\Controllers\AdminController\ServiceController.php(22): view('admin/services/create')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\ServiceController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 16:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-09 16:52:53 --> Undefined array key "id"
+in APPPATH\Views\admin\services\index.php on line 33.
+ 1 APPPATH\Views\admin\services\index.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\admin\\services\\index.php', 33)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\admin\\services\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/services/index', [], true)
+ 5 APPPATH\Controllers\AdminController\ServiceController.php(14): view('admin/services/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\ServiceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\ServiceController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 16:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-09 16:53:14 --> Undefined array key "name"
+in APPPATH\Views\admin\services\index.php on line 34.
+ 1 APPPATH\Views\admin\services\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\admin\\services\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\admin\\services\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/services/index', [], true)
+ 5 APPPATH\Controllers\AdminController\ServiceController.php(14): view('admin/services/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\ServiceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\ServiceController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 16:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 16:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-09 17:12:29 --> Undefined variable $sub_service
+in APPPATH\Views\admin\sub-services\index.php on line 27.
+ 1 APPPATH\Views\admin\sub-services\index.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sub_service', 'D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\admin\\sub-services\\index.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\admin\\sub-services\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/sub-services/index', [], true)
+ 5 APPPATH\Controllers\AdminController\SubserviceController.php(14): view('admin/sub-services/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\SubserviceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\SubserviceController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 17:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-09 17:44:14 --> syntax error, unexpected token ","
+in APPPATH\Controllers\AdminController\SubserviceController.php on line 90.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Projects\\AnweshaDi\\taxation_project\\app\\Controllers\\AdminController\\SubserviceController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController\\SubserviceController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController\\SubserviceController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\AdminController\\SubserviceController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 17:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-09 17:44:42 --> Object of class App\Models\ServiceModel could not be converted to string
+in APPPATH\Controllers\AdminController\SubserviceController.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\SubserviceController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\SubserviceController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 17:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:45:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-09 17:46:38 --> Array to string conversion
+in APPPATH\Controllers\AdminController\SubserviceController.php on line 84.
+ 1 APPPATH\Controllers\AdminController\SubserviceController.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Projects\\AnweshaDi\\taxation_project\\app\\Controllers\\AdminController\\SubserviceController.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\SubserviceController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\SubserviceController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 17:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-09 17:47:33 --> Attempt to read property "name" on array
+in APPPATH\Controllers\AdminController\SubserviceController.php on line 84.
+ 1 APPPATH\Controllers\AdminController\SubserviceController.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'D:\\Projects\\AnweshaDi\\taxation_project\\app\\Controllers\\AdminController\\SubserviceController.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\SubserviceController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\SubserviceController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 17:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-09 17:56:43 --> The framework needs the following extension(s) installed and loaded: "GD".
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 74.
+ 1 SYSTEMPATH\Images\Handlers\GDHandler.php(34): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('GD')
+ 2 SYSTEMPATH\Config\Services.php(346): CodeIgniter\Images\Handlers\GDHandler->__construct(Object(Config\Images))
+ 3 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::image('gd', Object(Config\Images), false)
+ 4 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('image', [...])
+ 5 SYSTEMPATH\Config\Services.php(337): CodeIgniter\Config\BaseService::getSharedInstance('image', null, null)
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::image()
+ 7 APPPATH\Controllers\AdminController\SubserviceController.php(34): CodeIgniter\Config\BaseService::__callStatic('image', [])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\SubserviceController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\SubserviceController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 17:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-09 17:57:21 --> mysqli_sql_exception: Column 'image' cannot be null in D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Projects\AnweshaDi\taxation_project\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 D:\Projects\AnweshaDi\taxation_project\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 D:\Projects\AnweshaDi\taxation_project\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Projects\AnweshaDi\taxation_project\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Projects\AnweshaDi\taxation_project\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\Projects\AnweshaDi\taxation_project\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 D:\Projects\AnweshaDi\taxation_project\app\Controllers\AdminController\SubserviceController.php(125): CodeIgniter\BaseModel->save(Array)
+#9 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(919): App\Controllers\AdminController\SubserviceController->create()
+#10 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\SubserviceController))
+#11 D:\Projects\AnweshaDi\taxation_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Projects\AnweshaDi\taxation_project\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-09 17:57:21 --> Column 'image' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `subservices` (`service_id`, `service_name`, `subservice_name`, `subservice_slug`, `image`, `details`, `created_at`, `updated_at`) VALUES (:service_id:, :service_name:, :subservice_name:, :subservice_slug:, :image:, :details:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\AdminController\SubserviceController.php(125): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\SubserviceController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\SubserviceController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 17:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-09 17:57:43 --> Undefined variable $services
+in APPPATH\Views\admin\sub-services\index.php on line 40.
+ 1 APPPATH\Views\admin\sub-services\index.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\admin\\sub-services\\index.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\admin\\sub-services\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/sub-services/index', [], true)
+ 5 APPPATH\Controllers\AdminController\SubserviceController.php(15): view('admin/sub-services/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\SubserviceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\SubserviceController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 17:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-09 17:58:50 --> Undefined array key "name"
+in APPPATH\Views\admin\sub-services\index.php on line 40.
+ 1 APPPATH\Views\admin\sub-services\index.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\admin\\sub-services\\index.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\admin\\sub-services\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/sub-services/index', [], true)
+ 5 APPPATH\Controllers\AdminController\SubserviceController.php(15): view('admin/sub-services/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\SubserviceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\SubserviceController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 17:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 17:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-09 18:11:00 --> Undefined variable $reviews
+in APPPATH\Views\web\home.php on line 147.
+ 1 APPPATH\Views\web\home.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $reviews', 'D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\web\\home.php', 147)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(25): view('web/home')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 18:23:11 --> Call to undefined method App\Models\ServiceModel::getServicedetails
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Home.php(17): CodeIgniter\Model->__call('getServicedetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 18:27:07 --> Undefined variable $getServicedetails
+in APPPATH\Views\web\components\header.php on line 112.
+ 1 APPPATH\Views\web\components\header.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getServicedetails', 'D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\web\\components\\header.php', 112)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\web\\components\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('web/components/header', null, true)
+ 5 APPPATH\Views\web\components\assemble.php(1): CodeIgniter\View\View->include('web/components/header')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\web\\components\\assemble.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('web/components/assemble', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+10 APPPATH\Controllers\Home.php(30): view('web/home', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 18:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 18:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-09 18:57:31 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\Home.php on line 34.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Projects\\AnweshaDi\\taxation_project\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 19:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-09 20:08:43 --> Undefined variable $serviceDetail
+in APPPATH\Views\web\components\header.php on line 112.
+ 1 APPPATH\Views\web\components\header.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $serviceDetail', 'D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\web\\components\\header.php', 112)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\web\\components\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('web/components/header', null, true)
+ 5 APPPATH\Views\web\components\assemble.php(1): CodeIgniter\View\View->include('web/components/header')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\AnweshaDi\\taxation_project\\app\\Views\\web\\components\\assemble.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('web/components/assemble', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/about-us', [], true)
+10 APPPATH\Controllers\Home.php(89): view('web/about-us')
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->aboutUs()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-09 20:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 20:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 20:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,259 @@
+ERROR - 2024-07-12 18:40:00 --> mysqli_sql_exception: Table 'taxation.city_wise_data' doesn't exist in D:\Practice\housefull24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Practice\housefull24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id`, `c...', 0)
+#1 D:\Practice\housefull24\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `c...')
+#2 D:\Practice\housefull24\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `c...')
+#3 D:\Practice\housefull24\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `c...', Array, false)
+#4 D:\Practice\housefull24\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Practice\housefull24\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Practice\housefull24\app\Controllers\Home.php(13): CodeIgniter\BaseModel->findAll()
+#7 D:\Practice\housefull24\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#8 D:\Practice\housefull24\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\Practice\housefull24\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Practice\housefull24\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-12 18:40:00 --> Table 'taxation.city_wise_data' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `city_name`
+FROM `city_wise_data`
+WHERE `state` = :state:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(13): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-12 19:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-12 19:18:25 --> Call to undefined method App\Models\PlaceModel::getCityData
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\AdminController\PlaceController.php(16): CodeIgniter\Model->__call('getCityData', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\PlaceController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\PlaceController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-12 19:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-12 19:18:59 --> Invalid file: "admin/places/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/places/create.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/places/create', [], true)
+ 3 APPPATH\Controllers\AdminController\PlaceController.php(28): view('admin/places/create')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\PlaceController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\PlaceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-12 19:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-12 19:20:22 --> Class "App\Controllers\AdminController\CityeModel" not found
+in APPPATH\Controllers\AdminController\PlaceController.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\PlaceController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\PlaceController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-12 19:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-12 19:29:12 --> Undefined array key "state"
+in APPPATH\Views\admin\places\index.php on line 32.
+ 1 APPPATH\Views\admin\places\index.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "state"', 'D:\\Practice\\housefull24\\app\\Views\\admin\\places\\index.php', 32)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Practice\\housefull24\\app\\Views\\admin\\places\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/places/index', [], true)
+ 5 APPPATH\Controllers\AdminController\PlaceController.php(20): view('admin/places/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\PlaceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\PlaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-12 19:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-12 19:32:30 --> mysqli_sql_exception: Unknown column 'state' in 'where clause' in D:\Practice\housefull24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Practice\housefull24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id`, `p...', 0)
+#1 D:\Practice\housefull24\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p...')
+#2 D:\Practice\housefull24\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p...')
+#3 D:\Practice\housefull24\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p...', Array, false)
+#4 D:\Practice\housefull24\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Practice\housefull24\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Practice\housefull24\app\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+#7 D:\Practice\housefull24\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#8 D:\Practice\housefull24\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\Practice\housefull24\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Practice\housefull24\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-12 19:32:30 --> Unknown column 'state' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `place_name`
+FROM `places`
+WHERE `state` = :state:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-12 19:32:50 --> Undefined array key "city_name"
+in APPPATH\Views\web\home.php on line 19.
+ 1 APPPATH\Views\web\home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city_name"', 'D:\\Practice\\housefull24\\app\\Views\\web\\home.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Practice\\housefull24\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(26): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-12 19:34:04 --> Undefined array key "city_name"
+in APPPATH\Views\web\home.php on line 19.
+ 1 APPPATH\Views\web\home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city_name"', 'D:\\Practice\\housefull24\\app\\Views\\web\\home.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Practice\\housefull24\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(26): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-12 19:34:05 --> Undefined array key "city_name"
+in APPPATH\Views\web\home.php on line 19.
+ 1 APPPATH\Views\web\home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city_name"', 'D:\\Practice\\housefull24\\app\\Views\\web\\home.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Practice\\housefull24\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(26): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-12 19:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-12 19:45:35 --> Undefined variable $cityModel
+in APPPATH\Controllers\AdminController\PlaceController.php on line 225.
+ 1 APPPATH\Controllers\AdminController\PlaceController.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cityModel', 'D:\\Practice\\housefull24\\app\\Controllers\\AdminController\\PlaceController.php', 225)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\PlaceController->listDocuments()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\PlaceController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-12 19:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 19:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-12 19:57:10 --> Undefined array key "id"
+in APPPATH\Views\admin\documents\index.php on line 38.
+ 1 APPPATH\Views\admin\documents\index.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\Practice\\housefull24\\app\\Views\\admin\\documents\\index.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Practice\\housefull24\\app\\Views\\admin\\documents\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/documents/index', [], true)
+ 5 APPPATH\Controllers\AdminController\PlaceController.php(233): view('admin/documents/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\PlaceController->listDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\PlaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-12 19:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-12 19:57:24 --> Undefined array key "service_name"
+in APPPATH\Views\admin\documents\index.php on line 39.
+ 1 APPPATH\Views\admin\documents\index.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "service_name"', 'D:\\Practice\\housefull24\\app\\Views\\admin\\documents\\index.php', 39)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Practice\\housefull24\\app\\Views\\admin\\documents\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/documents/index', [], true)
+ 5 APPPATH\Controllers\AdminController\PlaceController.php(233): view('admin/documents/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\PlaceController->listDocuments()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\PlaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-12 19:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 20:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 20:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 20:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-12 20:04:59 --> Call to undefined method App\Models\PlaceModel::getServices
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\AdminController\PlaceController.php(237): CodeIgniter\Model->__call('getServices', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\PlaceController->createDocuments()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\PlaceController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-12 20:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-12 20:05:29 --> Call to undefined method App\Models\PlaceModel::getServices
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\AdminController\PlaceController.php(237): CodeIgniter\Model->__call('getServices', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\PlaceController->createDocuments()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\PlaceController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-12 20:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 20:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 20:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 20:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 20:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 20:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 20:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 20:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-12 20:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-12 20:44:36 --> Undefined variable $getDocName
+in APPPATH\Views\web\document.php on line 31.
+ 1 APPPATH\Views\web\document.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getDocName', 'D:\\Practice\\housefull24\\app\\Views\\web\\document.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Practice\\housefull24\\app\\Views\\web\\document.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/document', [], true)
+ 5 APPPATH\Controllers\Home.php(53): view('web/document', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->docData('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-12 20:44:54 --> Undefined array key "document_name"
+in APPPATH\Views\web\document.php on line 31.
+ 1 APPPATH\Views\web\document.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "document_name"', 'D:\\Practice\\housefull24\\app\\Views\\web\\document.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Practice\\housefull24\\app\\Views\\web\\document.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/document', [], true)
+ 5 APPPATH\Controllers\Home.php(53): view('web/document', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->docData('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-12 20:53:51 --> Call to undefined method App\Models\DocumentModel::findAllf
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Home.php(62): CodeIgniter\Model->__call('findAllf', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->dwnlddocData('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-12 20:57:01 --> Undefined array key "details"
+in APPPATH\Views\web\getdocuments.php on line 30.
+ 1 APPPATH\Views\web\getdocuments.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "details"', 'D:\\Practice\\housefull24\\app\\Views\\web\\getdocuments.php', 30)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Practice\\housefull24\\app\\Views\\web\\getdocuments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/getdocuments', [], true)
+ 5 APPPATH\Controllers\Home.php(68): view('web/getdocuments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->dwnlddocData('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-12 21:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

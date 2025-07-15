@@ -1,0 +1,40 @@
+ERROR - 2024-08-05 21:36:26 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/u264005335/domains/housefull24.com/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/u264005335/domains/housefull24.com/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/u264005335/domains/housefull24.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u264005335/domains/housefull24.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/u264005335/domains/housefull24.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u264005335/domains/housefull24.com/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/u264005335/domains/housefull24.com/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /home/u264005335/domains/housefull24.com/public_html/app/Controllers/Home.php(15): CodeIgniter\BaseModel->findAll()
+#7 /home/u264005335/domains/housefull24.com/public_html/system/CodeIgniter.php(919): App\Controllers\Home->index()
+#8 /home/u264005335/domains/housefull24.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/u264005335/domains/housefull24.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/u264005335/domains/housefull24.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/u264005335/domains/housefull24.com/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/u264005335/domains/housefull24.com/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u264005335/domains/housefull24.com/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/u264005335/domains/housefull24.com/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/u264005335/domains/housefull24.com/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/u264005335/domains/housefull24.com/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /home/u264005335/domains/housefull24.com/public_html/app/Controllers/Home.php(15): CodeIgniter\BaseModel->findAll()
+#6 /home/u264005335/domains/housefull24.com/public_html/system/CodeIgniter.php(919): App\Controllers\Home->index()
+#7 /home/u264005335/domains/housefull24.com/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /home/u264005335/domains/housefull24.com/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u264005335/domains/housefull24.com/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-08-05 21:36:26 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(15): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

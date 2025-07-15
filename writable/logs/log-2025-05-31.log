@@ -1,0 +1,53 @@
+ERROR - 2025-05-31 17:20:56 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ogtdb' in D:\personal\luchi\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\personal\luchi\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ogtdb', 3306, '', 0)
+#1 D:\personal\luchi\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\personal\luchi\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\personal\luchi\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p...', Array, false)
+#4 D:\personal\luchi\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\personal\luchi\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\personal\luchi\app\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+#7 D:\personal\luchi\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#8 D:\personal\luchi\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\personal\luchi\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\personal\luchi\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ogtdb' in D:\personal\luchi\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\personal\luchi\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\personal\luchi\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\personal\luchi\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p...', Array, false)
+#3 D:\personal\luchi\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\personal\luchi\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\personal\luchi\app\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+#6 D:\personal\luchi\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#7 D:\personal\luchi\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\personal\luchi\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\personal\luchi\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-05-31 17:20:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ogtdb'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `place_name`
+FROM `places`
+WHERE `state_name` = :state_name:', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 17:21:46 --> Class "App\Models\PlaceModel" not found
+in APPPATH\Controllers\Home.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-31 17:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 17:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 17:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 17:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 17:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

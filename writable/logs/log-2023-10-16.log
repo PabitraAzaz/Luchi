@@ -1,0 +1,996 @@
+ERROR - 2023-10-16 09:08:14 --> mysqli_sql_exception: Table 'dikutravels.tours' doesn't exist in D:\Projects\Diku\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Projects\Diku\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tours`....', 0)
+#1 D:\Projects\Diku\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tours`....')
+#2 D:\Projects\Diku\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tours`....')
+#3 D:\Projects\Diku\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\Diku\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\Diku\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\Diku\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\Diku\app\Controllers\Home.php(26): App\Models\ToursModel->getToursDetails()
+#8 D:\Projects\Diku\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 D:\Projects\Diku\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Projects\Diku\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Projects\Diku\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-16 09:08:14 --> Table 'dikutravels.tours' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `tour_cover_image`, `tours`.`continent` as `continent`, `tours`.`title` as `tours_title`, `tours`.`short_description` as `tours_sh_desc`, `tours`.`price` as `tours_price`, `tours`.`duration` as `tours_duration`, `tours`.`journey_date_1` as `tours_j1`, `tours`.`journey_date_2` as `tours_j2`, `tours`.`journey_date_3` as `tours_j3`, `tours`.`trip_map_description` as `tours_trip_map_description`, `tours`.`trip_map_image` as `tours_tmap`, `categories`.`name` as `c_name`
+FROM `tours`
+JOIN `categories` ON `tours`.`categories` = `categories`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(26): App\Models\ToursModel->getToursDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-16 10:00:15 --> mysqli_sql_exception: Table 'dikutravels.categories' doesn't exist in D:\Projects\Diku\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Projects\Diku\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tours`....', 0)
+#1 D:\Projects\Diku\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tours`....')
+#2 D:\Projects\Diku\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tours`....')
+#3 D:\Projects\Diku\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\Diku\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\Diku\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\Diku\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\Diku\app\Controllers\Home.php(26): App\Models\ToursModel->getToursDetails()
+#8 D:\Projects\Diku\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 D:\Projects\Diku\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Projects\Diku\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Projects\Diku\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-16 10:00:15 --> Table 'dikutravels.categories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `tour_cover_image`, `tours`.`continent` as `continent`, `tours`.`title` as `tours_title`, `tours`.`short_description` as `tours_sh_desc`, `tours`.`price` as `tours_price`, `tours`.`duration` as `tours_duration`, `tours`.`journey_date_1` as `tours_j1`, `tours`.`journey_date_2` as `tours_j2`, `tours`.`journey_date_3` as `tours_j3`, `tours`.`trip_map_description` as `tours_trip_map_description`, `tours`.`trip_map_image` as `tours_tmap`, `categories`.`name` as `c_name`
+FROM `tours`
+JOIN `categories` ON `tours`.`categories` = `categories`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(26): App\Models\ToursModel->getToursDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-16 10:02:12 --> mysqli_sql_exception: Table 'dikutravels.categories' doesn't exist in D:\Projects\Diku\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Projects\Diku\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tours`....', 0)
+#1 D:\Projects\Diku\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tours`....')
+#2 D:\Projects\Diku\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tours`....')
+#3 D:\Projects\Diku\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\Diku\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\Diku\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\Diku\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\Diku\app\Controllers\Home.php(18): App\Models\ToursModel->getToursDetails()
+#8 D:\Projects\Diku\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 D:\Projects\Diku\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Projects\Diku\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Projects\Diku\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-16 10:02:12 --> Table 'dikutravels.categories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `tour_cover_image`, `tours`.`continent` as `continent`, `tours`.`title` as `tours_title`, `tours`.`short_description` as `tours_sh_desc`, `tours`.`price` as `tours_price`, `tours`.`duration` as `tours_duration`, `tours`.`journey_date_1` as `tours_j1`, `tours`.`journey_date_2` as `tours_j2`, `tours`.`journey_date_3` as `tours_j3`, `tours`.`trip_map_description` as `tours_trip_map_description`, `tours`.`trip_map_image` as `tours_tmap`, `categories`.`name` as `c_name`
+FROM `tours`
+JOIN `categories` ON `tours`.`categories` = `categories`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(18): App\Models\ToursModel->getToursDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-16 10:03:02 --> mysqli_sql_exception: Table 'dikutravels.categories' doesn't exist in D:\Projects\Diku\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Projects\Diku\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tours`....', 0)
+#1 D:\Projects\Diku\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tours`....')
+#2 D:\Projects\Diku\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tours`....')
+#3 D:\Projects\Diku\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\Diku\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\Diku\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\Diku\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\Diku\app\Controllers\Home.php(18): App\Models\ToursModel->getToursDetails()
+#8 D:\Projects\Diku\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 D:\Projects\Diku\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Projects\Diku\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Projects\Diku\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-16 10:03:02 --> Table 'dikutravels.categories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `tour_cover_image`, `tours`.`continent` as `continent`, `tours`.`title` as `tours_title`, `tours`.`short_description` as `tours_sh_desc`, `tours`.`price` as `tours_price`, `tours`.`duration` as `tours_duration`, `tours`.`journey_date_1` as `tours_j1`, `tours`.`journey_date_2` as `tours_j2`, `tours`.`journey_date_3` as `tours_j3`, `tours`.`trip_map_description` as `tours_trip_map_description`, `tours`.`trip_map_image` as `tours_tmap`, `categories`.`name` as `c_name`
+FROM `tours`
+JOIN `categories` ON `tours`.`categories` = `categories`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(18): App\Models\ToursModel->getToursDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-16 10:03:05 --> mysqli_sql_exception: Table 'dikutravels.categories' doesn't exist in D:\Projects\Diku\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Projects\Diku\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tours`....', 0)
+#1 D:\Projects\Diku\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tours`....')
+#2 D:\Projects\Diku\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tours`....')
+#3 D:\Projects\Diku\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\Diku\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\Diku\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\Diku\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\Diku\app\Controllers\Home.php(18): App\Models\ToursModel->getToursDetails()
+#8 D:\Projects\Diku\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 D:\Projects\Diku\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Projects\Diku\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Projects\Diku\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-16 10:03:05 --> Table 'dikutravels.categories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `tour_cover_image`, `tours`.`continent` as `continent`, `tours`.`title` as `tours_title`, `tours`.`short_description` as `tours_sh_desc`, `tours`.`price` as `tours_price`, `tours`.`duration` as `tours_duration`, `tours`.`journey_date_1` as `tours_j1`, `tours`.`journey_date_2` as `tours_j2`, `tours`.`journey_date_3` as `tours_j3`, `tours`.`trip_map_description` as `tours_trip_map_description`, `tours`.`trip_map_image` as `tours_tmap`, `categories`.`name` as `c_name`
+FROM `tours`
+JOIN `categories` ON `tours`.`categories` = `categories`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(18): App\Models\ToursModel->getToursDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-16 10:03:05 --> mysqli_sql_exception: Table 'dikutravels.categories' doesn't exist in D:\Projects\Diku\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Projects\Diku\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tours`....', 0)
+#1 D:\Projects\Diku\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tours`....')
+#2 D:\Projects\Diku\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tours`....')
+#3 D:\Projects\Diku\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\Diku\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\Diku\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\Diku\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\Diku\app\Controllers\Home.php(18): App\Models\ToursModel->getToursDetails()
+#8 D:\Projects\Diku\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 D:\Projects\Diku\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Projects\Diku\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Projects\Diku\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-16 10:03:05 --> Table 'dikutravels.categories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `tour_cover_image`, `tours`.`continent` as `continent`, `tours`.`title` as `tours_title`, `tours`.`short_description` as `tours_sh_desc`, `tours`.`price` as `tours_price`, `tours`.`duration` as `tours_duration`, `tours`.`journey_date_1` as `tours_j1`, `tours`.`journey_date_2` as `tours_j2`, `tours`.`journey_date_3` as `tours_j3`, `tours`.`trip_map_description` as `tours_trip_map_description`, `tours`.`trip_map_image` as `tours_tmap`, `categories`.`name` as `c_name`
+FROM `tours`
+JOIN `categories` ON `tours`.`categories` = `categories`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(18): App\Models\ToursModel->getToursDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-16 10:03:05 --> mysqli_sql_exception: Table 'dikutravels.categories' doesn't exist in D:\Projects\Diku\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Projects\Diku\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tours`....', 0)
+#1 D:\Projects\Diku\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tours`....')
+#2 D:\Projects\Diku\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tours`....')
+#3 D:\Projects\Diku\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\Diku\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\Diku\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\Diku\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\Diku\app\Controllers\Home.php(18): App\Models\ToursModel->getToursDetails()
+#8 D:\Projects\Diku\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 D:\Projects\Diku\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Projects\Diku\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Projects\Diku\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-16 10:03:05 --> Table 'dikutravels.categories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `tour_cover_image`, `tours`.`continent` as `continent`, `tours`.`title` as `tours_title`, `tours`.`short_description` as `tours_sh_desc`, `tours`.`price` as `tours_price`, `tours`.`duration` as `tours_duration`, `tours`.`journey_date_1` as `tours_j1`, `tours`.`journey_date_2` as `tours_j2`, `tours`.`journey_date_3` as `tours_j3`, `tours`.`trip_map_description` as `tours_trip_map_description`, `tours`.`trip_map_image` as `tours_tmap`, `categories`.`name` as `c_name`
+FROM `tours`
+JOIN `categories` ON `tours`.`categories` = `categories`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(18): App\Models\ToursModel->getToursDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 10:06:42 --> Undefined variable $continents
+in APPPATH\Views\web\home.php on line 195.
+ 1 APPPATH\Views\web\home.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $continents', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 195)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 10:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 12:17:40 --> Undefined array key "cover_image"
+in APPPATH\Views\web\home.php on line 28.
+ 1 APPPATH\Views\web\home.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cover_image"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 12:18:36 --> Undefined array key "cover_image"
+in APPPATH\Views\web\home.php on line 29.
+ 1 APPPATH\Views\web\home.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cover_image"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 12:18:52 --> Undefined array key "tours_cover_image"
+in APPPATH\Views\web\home.php on line 29.
+ 1 APPPATH\Views\web\home.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tours_cover_image"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 12:19:35 --> Undefined array key "tour_duration"
+in APPPATH\Views\web\home.php on line 32.
+ 1 APPPATH\Views\web\home.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tour_duration"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 32)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 12:20:22 --> Undefined array key "tour_title"
+in APPPATH\Views\web\home.php on line 38.
+ 1 APPPATH\Views\web\home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tour_title"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 12:20:46 --> Undefined array key "tour_sh_desc"
+in APPPATH\Views\web\home.php on line 39.
+ 1 APPPATH\Views\web\home.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tour_sh_desc"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 39)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 12:21:05 --> Undefined array key "tour_price"
+in APPPATH\Views\web\home.php on line 42.
+ 1 APPPATH\Views\web\home.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tour_price"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 42)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 12:22:51 --> Class "App\Controllers\PlacesModel" not found
+in APPPATH\Controllers\Home.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tourdetails('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 12:33:22 --> Undefined array key "is_popular"
+in APPPATH\Views\web\home.php on line 94.
+ 1 APPPATH\Views\web\home.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "is_popular"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 94)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 12:33:52 --> Undefined array key "is_popular"
+in APPPATH\Views\web\home.php on line 94.
+ 1 APPPATH\Views\web\home.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "is_popular"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 94)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 12:34:08 --> Undefined array key "is_popular"
+in APPPATH\Views\web\home.php on line 94.
+ 1 APPPATH\Views\web\home.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "is_popular"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 94)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 12:49:55 --> syntax error, unexpected token ")"
+in APPPATH\Views\web\home.php on line 96.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 3 APPPATH\Controllers\Home.php(23): view('web/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 13:02:42 --> Undefined variable $tours
+in APPPATH\Views\web\home.php on line 29.
+ 1 APPPATH\Views\web\home.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tours', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(23): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 13:18:55 --> Undefined array key "dsetails"
+in APPPATH\Views\web\home.php on line 110.
+ 1 APPPATH\Views\web\home.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dsetails"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 110)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(23): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 13:19:01 --> Undefined array key "details"
+in APPPATH\Views\web\home.php on line 110.
+ 1 APPPATH\Views\web\home.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "details"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 110)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(23): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 13:21:27 --> syntax error, unexpected token "endforeach", expecting "elseif" or "else" or "endif"
+in APPPATH\Views\web\home.php on line 123.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 3 APPPATH\Controllers\Home.php(23): view('web/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 13:27:48 --> Undefined array key "tour_cover_image"
+in APPPATH\Views\web\home.php on line 100.
+ 1 APPPATH\Views\web\home.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tour_cover_image"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 100)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 13:28:03 --> Undefined array key "tours_title"
+in APPPATH\Views\web\home.php on line 103.
+ 1 APPPATH\Views\web\home.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tours_title"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 103)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 13:28:13 --> Undefined array key "sh_desc"
+in APPPATH\Views\web\home.php on line 104.
+ 1 APPPATH\Views\web\home.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sh_desc"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 104)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 13:51:09 --> Undefined array key "tours_id"
+in APPPATH\Views\web\home.php on line 121.
+ 1 APPPATH\Views\web\home.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tours_id"', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 121)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 13:59:52 --> Undefined variable $review
+in APPPATH\Views\web\home.php on line 163.
+ 1 APPPATH\Views\web\home.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $review', 'D:\\Projects\\Diku\\app\\Views\\web\\home.php', 163)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-16 19:10:29 --> mysqli_sql_exception: Table 'dikutravels.categories' doesn't exist in D:\Projects\Diku\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Projects\Diku\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tours`....', 0)
+#1 D:\Projects\Diku\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tours`....')
+#2 D:\Projects\Diku\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tours`....')
+#3 D:\Projects\Diku\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\Diku\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\Diku\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 D:\Projects\Diku\app\Models\ToursModel.php(54): CodeIgniter\BaseModel->first()
+#7 D:\Projects\Diku\app\Controllers\Home.php(31): App\Models\ToursModel->getTourDetailsbyId('1')
+#8 D:\Projects\Diku\system\CodeIgniter.php(919): App\Controllers\Home->tourdetails('1')
+#9 D:\Projects\Diku\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Projects\Diku\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Projects\Diku\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-16 19:10:29 --> Table 'dikutravels.categories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`categories` as `tours_cat`, `tours`.`cover_image` as `tours_c_image`, `tours`.`title` as `tours_title`, `tours`.`short_description` as `tours_sh_desc`, `tours`.`price` as `tours_price`, `tours`.`duration` as `tours_duration`, `tours`.`journey_date_1` as `tours_j1`, `tours`.`journey_date_2` as `tours_j2`, `tours`.`journey_date_3` as `tours_j3`, `tours`.`trip_map_description` as `tours_tmap_desc`, `tours`.`trip_map_image` as `tours_tmap_image`, `categories`.`name` as `c_name`
+FROM `tours`
+JOIN `categories` ON `tours`.`categories` = `categories`.`id`
+WHERE `tours`.`id` = :tours.id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\ToursModel.php(54): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Home.php(31): App\Models\ToursModel->getTourDetailsbyId('1')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tourdetails('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 19:11:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\web\tour-detail.php on line 13.
+ 1 APPPATH\Views\web\tour-detail.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/tour-detail', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('web/tour-detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tourdetails('assets', 'img', 'tour-thumb.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 19:12:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\web\tour-detail.php on line 13.
+ 1 APPPATH\Views\web\tour-detail.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/tour-detail', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('web/tour-detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tourdetails('assets', 'img', 'tour-thumb.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 19:13:17 --> Trying to access array offset on value of type null
+in APPPATH\Views\web\tour-detail.php on line 13.
+ 1 APPPATH\Views\web\tour-detail.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/tour-detail', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('web/tour-detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tourdetails('assets', 'img', 'tour-thumb.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 19:13:17 --> Trying to access array offset on value of type null
+in APPPATH\Views\web\tour-detail.php on line 13.
+ 1 APPPATH\Views\web\tour-detail.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/tour-detail', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('web/tour-detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tourdetails('assets', 'img', 'tour-thumb.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 19:14:13 --> Trying to access array offset on value of type null
+in APPPATH\Views\web\tour-detail.php on line 11.
+ 1 APPPATH\Views\web\tour-detail.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/tour-detail', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('web/tour-detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tourdetails('assets', 'img', 'tour-thumb.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 19:14:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\web\tour-detail.php on line 11.
+ 1 APPPATH\Views\web\tour-detail.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/tour-detail', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('web/tour-detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tourdetails('assets', 'img', 'tour-thumb.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 19:15:15 --> Trying to access array offset on value of type null
+in APPPATH\Views\web\tour-detail.php on line 11.
+ 1 APPPATH\Views\web\tour-detail.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/tour-detail', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('web/tour-detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tourdetails('assets', 'img', 'tour-thumb.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 19:16:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\web\tour-detail.php on line 11.
+ 1 APPPATH\Views\web\tour-detail.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/tour-detail', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('web/tour-detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tourdetails('assets', 'img', 'tour-thumb.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 19:17:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\web\tour-detail.php on line 11.
+ 1 APPPATH\Views\web\tour-detail.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/tour-detail', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('web/tour-detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tourdetails('assets', 'img', 'tour-thumb.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 19:17:46 --> Trying to access array offset on value of type null
+in APPPATH\Views\web\tour-detail.php on line 11.
+ 1 APPPATH\Views\web\tour-detail.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/tour-detail', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('web/tour-detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tourdetails('assets', 'img', 'tour-thumb.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 19:17:54 --> Trying to access array offset on value of type null
+in APPPATH\Views\web\tour-detail.php on line 11.
+ 1 APPPATH\Views\web\tour-detail.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/tour-detail', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('web/tour-detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tourdetails('assets', 'img', 'tour-thumb.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 19:19:10 --> Trying to access array offset on value of type null
+in APPPATH\Views\web\tour-detail.php on line 11.
+ 1 APPPATH\Views\web\tour-detail.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\web\\tour-detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('web/tour-detail', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('web/tour-detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tourdetails('assets', 'img', 'tour-thumb.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 19:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:54:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 19:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-16 20:05:21 --> mysqli_sql_exception: Unknown column 'phone_no' in 'field list' in D:\Projects\Diku\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Projects\Diku\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `me...', 0)
+#1 D:\Projects\Diku\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `me...')
+#2 D:\Projects\Diku\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `me...')
+#3 D:\Projects\Diku\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `me...', Array, false)
+#4 D:\Projects\Diku\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Projects\Diku\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Projects\Diku\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\Projects\Diku\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 D:\Projects\Diku\app\Controllers\Home.php(74): CodeIgniter\BaseModel->save(Array)
+#9 D:\Projects\Diku\system\CodeIgniter.php(919): App\Controllers\Home->cotactUs()
+#10 D:\Projects\Diku\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\Projects\Diku\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Projects\Diku\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-16 20:05:21 --> Unknown column 'phone_no' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `messages` (`full_name`, `email`, `phone_no`, `phone`, `message`, `created_at`, `updated_at`) VALUES (:full_name:, :email:, :phone_no:, :phone:, :message:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(74): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->cotactUs()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 20:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 20:09:49 --> Undefined array key "status"
+in APPPATH\Controllers\AdminController\LoginController.php on line 39.
+ 1 APPPATH\Controllers\AdminController\LoginController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'D:\\Projects\\Diku\\app\\Controllers\\AdminController\\LoginController.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\LoginController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 20:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 20:17:09 --> Undefined array key "phone_no"
+in APPPATH\Views\admin\message.php on line 34.
+ 1 APPPATH\Views\admin\message.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "phone_no"', 'D:\\Projects\\Diku\\app\\Views\\admin\\message.php', 34)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\admin\\message.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/message', [], true)
+ 5 APPPATH\Controllers\AdminController\DashboardController.php(29): view('admin/message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\DashboardController->message()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 20:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 20:18:37 --> Undefined array key "website"
+in APPPATH\Views\admin\components\header.php on line 7.
+ 1 APPPATH\Views\admin\components\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "website"', 'D:\\Projects\\Diku\\app\\Views\\admin\\components\\header.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\admin\\components\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('admin/components/header', null, true)
+ 5 APPPATH\Views\admin\components\assemble.php(1): CodeIgniter\View\View->include('admin/components/header')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\admin\\components\\assemble.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('admin/components/assemble', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/dashboard', [], true)
+10 APPPATH\Controllers\AdminController\DashboardController.php(15): view('admin/dashboard')
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\DashboardController->index()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\DashboardController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 20:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 20:19:04 --> Undefined array key "website"
+in APPPATH\Views\admin\components\header.php on line 7.
+ 1 APPPATH\Views\admin\components\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "website"', 'D:\\Projects\\Diku\\app\\Views\\admin\\components\\header.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\admin\\components\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('admin/components/header', null, true)
+ 5 APPPATH\Views\admin\components\assemble.php(1): CodeIgniter\View\View->include('admin/components/header')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\admin\\components\\assemble.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('admin/components/assemble', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/dashboard', [], true)
+10 APPPATH\Controllers\AdminController\DashboardController.php(15): view('admin/dashboard')
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\DashboardController->index()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\DashboardController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 20:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-16 20:21:50 --> mysqli_sql_exception: Table 'dikutravels.categories' doesn't exist in D:\Projects\Diku\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Projects\Diku\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tours`....', 0)
+#1 D:\Projects\Diku\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tours`....')
+#2 D:\Projects\Diku\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tours`....')
+#3 D:\Projects\Diku\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\Diku\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\Diku\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\Diku\app\Controllers\AdminController\TourController.php(17): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\Diku\system\CodeIgniter.php(919): App\Controllers\AdminController\TourController->index()
+#8 D:\Projects\Diku\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\TourController))
+#9 D:\Projects\Diku\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Projects\Diku\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-16 20:21:50 --> Table 'dikutravels.categories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `cover_image`, `tours`.`title` as `title`, `tours`.`price` as `price`, `categories`.`name` as `name`
+FROM `tours`
+JOIN `categories` ON `tours`.`categories`=`categories`.`id`
+ORDER BY `tours`.`id` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController\TourController.php(17): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\TourController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\TourController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 20:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 20:22:24 --> Undefined array key "name"
+in APPPATH\Views\admin\tour\index.php on line 36.
+ 1 APPPATH\Views\admin\tour\index.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'D:\\Projects\\Diku\\app\\Views\\admin\\tour\\index.php', 36)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\admin\\tour\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/tour/index', [], true)
+ 5 APPPATH\Controllers\AdminController\TourController.php(18): view('admin/tour/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\TourController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\TourController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 20:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 20:22:50 --> Undefined array key "title"
+in APPPATH\Views\admin\tour\index.php on line 35.
+ 1 APPPATH\Views\admin\tour\index.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'D:\\Projects\\Diku\\app\\Views\\admin\\tour\\index.php', 35)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\admin\\tour\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/tour/index', [], true)
+ 5 APPPATH\Controllers\AdminController\TourController.php(18): view('admin/tour/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\TourController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\TourController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 20:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 20:23:26 --> Class "App\Models\CategoriesModel" not found
+in APPPATH\Controllers\AdminController\TourController.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\TourController->edit('2')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\TourController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 20:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 20:23:36 --> Class "App\Models\CategoriesModel" not found
+in APPPATH\Controllers\AdminController\TourController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\TourController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\TourController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 20:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-16 20:25:54 --> mysqli_sql_exception: Unknown column 'tours.popular' in 'field list' in D:\Projects\Diku\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Projects\Diku\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tours`....', 0)
+#1 D:\Projects\Diku\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tours`....')
+#2 D:\Projects\Diku\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tours`....')
+#3 D:\Projects\Diku\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\Diku\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\Diku\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\Diku\app\Controllers\AdminController\TourController.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\Diku\system\CodeIgniter.php(919): App\Controllers\AdminController\TourController->index()
+#8 D:\Projects\Diku\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\TourController))
+#9 D:\Projects\Diku\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Projects\Diku\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-16 20:25:54 --> Unknown column 'tours.popular' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `cover_image`, `tours`.`title` as `title`, `tours`.`price` as `price`, `tours`.`popular` as `popular`
+FROM `tours`
+ORDER BY `tours`.`id` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController\TourController.php(14): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\TourController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\TourController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 20:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 20:27:47 --> Undefined variable $cat
+in APPPATH\Views\admin\tour\create.php on line 25.
+ 1 APPPATH\Views\admin\tour\create.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cat', 'D:\\Projects\\Diku\\app\\Views\\admin\\tour\\create.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\admin\\tour\\create.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/tour/create', [], true)
+ 5 APPPATH\Controllers\AdminController\TourController.php(23): view('admin/tour/create')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\TourController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\TourController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 20:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 20:38:56 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\admin\tour\edit.php on line 30.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/tour/edit', [], true)
+ 4 APPPATH\Controllers\AdminController\TourController.php(134): view('admin/tour/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\TourController->edit('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\TourController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 20:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 20:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 21:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 21:00:57 --> Undefined variable $iti
+in APPPATH\Views\admin\tour\edit.php on line 50.
+ 1 APPPATH\Views\admin\tour\edit.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $iti', 'D:\\Projects\\Diku\\app\\Views\\admin\\tour\\edit.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\admin\\tour\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/tour/edit', [], true)
+ 5 APPPATH\Controllers\AdminController\TourController.php(134): view('admin/tour/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\TourController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\TourController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 21:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 21:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 21:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 21:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 21:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-16 21:58:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'dikutravels'@'localhost' (using password: YES) in D:\Projects\Diku\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Projects\Diku\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'dikutravels', 'Diku@2023', 'dikutravels', 3306, '', 0)
+#1 D:\Projects\Diku\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Projects\Diku\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Projects\Diku\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\Diku\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\Diku\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\Diku\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\Diku\app\Controllers\Home.php(18): App\Models\ToursModel->getToursDetails()
+#8 D:\Projects\Diku\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 D:\Projects\Diku\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Projects\Diku\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Projects\Diku\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\Projects\Diku\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Projects\Diku\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Projects\Diku\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Projects\Diku\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#3 D:\Projects\Diku\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Projects\Diku\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Projects\Diku\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#6 D:\Projects\Diku\app\Controllers\Home.php(18): App\Models\ToursModel->getToursDetails()
+#7 D:\Projects\Diku\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#8 D:\Projects\Diku\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\Projects\Diku\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Projects\Diku\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-16 21:58:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `tour_cover_image`, `tours`.`title` as `tours_title`, `tours`.`short_description` as `tours_sh_desc`, `tours`.`price` as `tours_price`, `tours`.`duration` as `tours_duration`, `tours`.`journey_date_1` as `tours_j1`, `tours`.`journey_date_2` as `tours_j2`, `tours`.`journey_date_3` as `tours_j3`, `tours`.`is_popular` as `is_popular`
+FROM `tours`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(18): App\Models\ToursModel->getToursDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-16 21:58:24 --> mysqli_sql_exception: Unknown column 'tours.is_popular' in 'field list' in D:\Projects\Diku\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Projects\Diku\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tours`....', 0)
+#1 D:\Projects\Diku\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tours`....')
+#2 D:\Projects\Diku\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tours`....')
+#3 D:\Projects\Diku\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`....', Array, false)
+#4 D:\Projects\Diku\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Projects\Diku\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Projects\Diku\app\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 D:\Projects\Diku\app\Controllers\Home.php(18): App\Models\ToursModel->getToursDetails()
+#8 D:\Projects\Diku\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 D:\Projects\Diku\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Projects\Diku\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Projects\Diku\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-16 21:58:24 --> Unknown column 'tours.is_popular' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tours`.`id` as `tours_id`, `tours`.`cover_image` as `tour_cover_image`, `tours`.`title` as `tours_title`, `tours`.`short_description` as `tours_sh_desc`, `tours`.`price` as `tours_price`, `tours`.`duration` as `tours_duration`, `tours`.`journey_date_1` as `tours_j1`, `tours`.`journey_date_2` as `tours_j2`, `tours`.`journey_date_3` as `tours_j3`, `tours`.`is_popular` as `is_popular`
+FROM `tours`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ToursModel.php(47): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(18): App\Models\ToursModel->getToursDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 22:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 22:30:23 --> Undefined variable $rules
+in APPPATH\Views\admin\tour\edit.php on line 59.
+ 1 APPPATH\Views\admin\tour\edit.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rules', 'D:\\Projects\\Diku\\app\\Views\\admin\\tour\\edit.php', 59)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Projects\\Diku\\app\\Views\\admin\\tour\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/tour/edit', [], true)
+ 5 APPPATH\Controllers\AdminController\TourController.php(138): view('admin/tour/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController\TourController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\TourController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 22:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 22:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

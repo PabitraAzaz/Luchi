@@ -1,0 +1,14 @@
+CRITICAL - 2024-07-24 00:56:50 --> Undefined variable $newfilename
+in APPPATH/Controllers/AdminController/PlaceController.php on line 244.
+ 1 APPPATH/Controllers/AdminController/PlaceController.php(244): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\AdminController\PlaceController->createDocuments()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 00:57:02 --> Undefined variable $newfilename
+in APPPATH/Controllers/AdminController/PlaceController.php on line 244.
+ 1 APPPATH/Controllers/AdminController/PlaceController.php(244): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\AdminController\PlaceController->createDocuments()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

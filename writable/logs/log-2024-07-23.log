@@ -1,0 +1,7 @@
+CRITICAL - 2024-07-23 02:17:05 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Home.php on line 45.
+ 1 APPPATH/Controllers/Home.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->docData()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
