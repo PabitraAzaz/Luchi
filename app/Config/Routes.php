@@ -23,9 +23,9 @@ $routes->group('admin', function ($routes) {
 
     $routes->group('bills', function ($routes) {
         $routes->get('/', 'AdminController\BillsController::index');
-        $routes->get('/create', 'AdminController\BillsController::index');
-        
-        
+        $routes->get('create', 'AdminController\BillsController::index');
+
+
         // $routes->match(['get', 'post'], 'create/', 'AdminController\PlaceController::create');
         // $routes->match(['get', 'post'], 'edit/(:num)', 'AdminController\PlaceController::edit/$1');
         // $routes->get('delete/(:num)', 'AdminController\PlaceController::delete/$1');

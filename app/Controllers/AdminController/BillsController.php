@@ -22,8 +22,10 @@ class BillsController extends BaseController
             return view('admin/bills/index');
         }
     }
-    
-    public function create() {
+
+    public function create()
+    {
+
         return view('admin/bills/create');
     }
 }
