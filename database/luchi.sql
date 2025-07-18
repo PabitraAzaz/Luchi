@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `bills`
 --
 
-CREATE TABLE `bills` (
+CREATE TABLE `luchi_bills` (
   `bill_id` int(11) NOT NULL,
   `invoice_number` varchar(255) NOT NULL,
   `date` varchar(255) NOT NULL,
@@ -89,7 +89,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `created_at`, `updated_a
 --
 -- Indexes for table `bills`
 --
-ALTER TABLE `bills`
+ALTER TABLE `luchi_bills`
   ADD PRIMARY KEY (`bill_id`);
 
 --
@@ -105,7 +105,7 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for table `bills`
 --
-ALTER TABLE `bills`
+ALTER TABLE `luchi_bills`
   MODIFY `bill_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
